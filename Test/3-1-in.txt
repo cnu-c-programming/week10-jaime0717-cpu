@@ -1,0 +1,7 @@
+add kim 100
+add lee 80
+add park 60
+print
+delete lee
+print
+quit
