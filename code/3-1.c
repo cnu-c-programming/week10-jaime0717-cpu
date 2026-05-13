@@ -66,13 +66,17 @@ int main()
 
             if (head->next == NULL)
             {
+                free(head->name);
+                free(head);
                 head = NULL;
+                p = NULL;
                 free(dename);
                 num -= 1;
             } else if (strcmp(head->name, dename) == 0)
             {
                 struct information *rhead = head;
                 head = head->next;
+                free(rhead->name);
                 free(rhead);
                 num -= 1;
             }
